@@ -1,0 +1,228 @@
+/*global classes*/
+body {
+	background: black;
+	color: cyan;
+	font-family: 'PT Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	padding: 20px 0;
+}
+
+li {
+	list-style: none;
+	padding: 15px;
+}
+/* Home Page */
+/*navigation classes*/
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #232324;    
+	top: 0;
+	z-index: 100;
+  	position: fixed;
+    width: 100%;
+}
+
+#GH_logo_main {
+	height: 55px;
+}
+
+#GH_logo:hover {
+	cursor: pointer;
+}
+
+.nav-items {
+	display: flex;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.nav-item {
+	padding: 10px;
+	margin-right: 10px;
+}
+
+.nav-item:hover, .blurb-name, #footer-contact:hover{
+	font-family: 'Permanent Marker', cursive;
+	cursor: pointer;
+	color: white;
+}
+
+.nav-icon {
+	display: none;
+}
+
+.hamburger {
+	width: 30px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+@media (max-width: 650px) {
+	.nav-items, #copyright {
+		display: none;
+	}
+	.nav-icon {
+		display: flex;
+	}
+}
+
+.spacer {
+	height: 55px;
+}
+
+
+/*popup menu*/
+.popup-menu-hide{
+	display: none
+
+}
+
+.popup-menu-show {
+	background-color: #232324;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0
+	left: 0;
+	z-index: 20000;
+}
+
+.cyan-close {
+	width: 50px;
+	padding: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.popup-menu-nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px;
+}
+
+.popup-menu-item {
+	font-size: 50px;
+	padding: 20px;
+	text-align: center;
+}
+
+.popup-menu-item:click {
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+}
+
+#GH_logo_aside {
+	width: 200px;
+}
+
+
+
+
+
+
+/*main area*/
+
+.main {
+	position: relative;
+	top: 0;
+}
+
+.blurb {
+	padding: 0 20px;
+}
+
+.blurb-hi {
+	text-align: center;
+	font-size: 40px;
+}
+
+.blurb-copy {
+	text-align: center;
+	font-size: 30px;
+	padding-right: 0;
+}
+
+.swanson-container {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+.swanson-copy {
+	padding: 10px;
+	font-size: 20px;
+	width: 75%;
+	text-align: center;
+}
+
+button {
+	font-family: "PT Sans";
+	color: cyan;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: black;
+	margin-top: 25px;
+	padding: 3px 8px;
+  	border-style: normal;
+  	border-color: cyan;
+}
+
+#ron {
+	height: 50px;
+	padding: 10px;
+}
+
+#ron-quote {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.swanson-response-container-hide {
+	display: none;
+}
+
+.swanson-response-container-show {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+footer {
+	display: flex;
+	position: fixed;
+	bottom: 0;
+	height: 40px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-color: #232324;
+}
+
+
+@media (max-width: 650px) {
+	.blurb-hi {
+		font-size: 30px
+	}
+	.blurb-copy {
+		font-size: 25px
+	}
+}
+
+/*main photo*/
+#GH_main {
+	background-size: cover;
+	width: 100%;
+}

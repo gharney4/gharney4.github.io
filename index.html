@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Permanent+Marker&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Garrett Harney</title>
+</head>
+<body>
+	<div class="navbar">
+		<div>
+			<a href="index.html"><img id="GH_logo_main" src="assets/GH_logo.png"></a>
+		</div>
+		<div class="nav-right">
+			<div class="nav-icon">
+				<img class="hamburger" id="menu-open" src="assets/hamburger-cyan.png">
+			</div>
+			<ul class="nav-items">
+				<li class="nav-item" id="about"><a href="html/music.html">Music</a></li>
+				<li class="nav-item" id="music"><a href="index.html">Videos</a></li>
+				<li class="nav-item" id="services"><a href="index.html">Services</a></li>
+				<li class="nav-item" id="contact"><a href="index.html">Contact</a></li>
+			</ul>	
+		</div>
+	</div>
+	
+	<div class="spacer"></div>
+	<div class="main">
+		<div class="blurb">
+			<h1 class="blurb-hi">
+				Hi, I'm <span class="blurb-name"><a href="https://www.linkedin.com/in/garrett-harney-514390162/">Garrett.</a></span>
+			</h1>
+			<h1 class="blurb-copy">I'm passionate about music, solving problems, and positive energy in the workplace.</h1>
+		</div>
+		<div class="swanson-container">
+			<h2 class="swanson-copy">That all sounds nice, but let's see what certified curmudgeon Ron Swanson has to say about it:<br><button type="submit" id="ask-ron">Ask Ron!</button></h2>
+		</div>
+		<div id ="ron-section" class="swanson-response-container-hide">
+			<img id="ron" src="assets/ron.png">
+			<p id="ron-quote"></p>
+		</div>
+		<div class="main-pic-container">
+			<img href="#" id="GH_main" src="assets/GH_main.JPG">
+		</div>
+
+	<aside id="popup-menu" class="popup-menu-hide">
+			<div class="popup-menu-nav">
+				<a href="index.html"><img src="assets/GH_logo.png"></a>
+				<a class = popup-menu-item href="html/music.html">Music</a>
+				<a class = popup-menu-item href="index.html">Videos</a>
+				<a class = popup-menu-item href="index.html">Services</a>
+				<a class = popup-menu-item href="index.html">Contact</a>
+				<img class="cyan-close" id="menu-close" src="assets/cyan-close.png">
+			</div>
+	</aside>
+	<div class="spacer"></div>
+	<footer>
+		<ul class="footer-links"></ul>
+			<li id="copyright">
+				&copy; 2021 Garrett Harney (except for the Ron Swanson quotes!)
+			</li>
+			<li>
+				<a id="footer-contact"href="#">Hit me up!</a>
+			</li>
+	</footer>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
