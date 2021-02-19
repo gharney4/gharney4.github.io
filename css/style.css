@@ -2,7 +2,7 @@
 body {
 	background: black;
 	color: cyan;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -12,6 +12,7 @@ a {
 
 h1 {
 	padding: 20px 0;
+	margin-bottom: 10px;
 }
 
 li {
@@ -43,6 +44,8 @@ li {
 	display: flex;
 	padding: 10px;
 	font-size: 18px;
+	font-weight: 200;
+	font-style: italic;
 }
 
 .nav-item {
@@ -50,7 +53,7 @@ li {
 	margin-right: 10px;
 }
 
-.nav-item:hover, .blurb-name, #footer-contact:hover{
+.nav-item:hover, .blurb-link:hover, #footer-contact:hover{
 	font-family: 'Permanent Marker', cursive;
 	cursor: pointer;
 	color: white;
@@ -76,7 +79,7 @@ li {
 }
 
 .spacer {
-	height: 55px;
+	height: 65px;
 }
 
 
@@ -113,8 +116,10 @@ li {
 }
 
 .popup-menu-item {
-	font-size: 50px;
+	font-size: 40px;
 	padding: 20px;
+	font-style: italic;
+	font-weight: 200;
 	text-align: center;
 }
 
@@ -143,37 +148,47 @@ li {
 	padding: 0 20px;
 }
 
-.blurb-hi {
-	text-align: center;
-	font-size: 40px;
+.blurb-link {
+	font-size: 40px
 }
 
-.blurb-copy {
-	text-align: center;
-	font-size: 30px;
+.blurb-normal {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+
+.blurb-accent {
+	text-align: left;
+	font-size: 40px;
 	padding-right: 0;
+	font-weight: 300;
+}
+
+.spotify-embed-container {
+	display: flex;
+	justify-content: center;
 }
 
 .swanson-container {
 	display: flex;
-	justify-content: center;
-	padding: 15px;
+	justify-content: flex-start;
 }
 
 .swanson-copy {
 	padding: 10px;
 	font-size: 20px;
 	width: 75%;
-	text-align: center;
+	text-align: left;
 }
 
 button {
-	font-family: "PT Sans";
+	font-family: "Roboto";
 	color: cyan;
 	font-size: 15px;
 	cursor: pointer;
 	background-color: black;
-	margin-top: 25px;
 	padding: 3px 8px;
   	border-style: normal;
   	border-color: cyan;
@@ -195,7 +210,7 @@ button {
 
 .swanson-response-container-show {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	color: white;
 }
@@ -211,14 +226,20 @@ footer {
 	background-color: #232324;
 }
 
+.footer-item {
+	font-weight: 300;
+	font-size: 14px;
+}
+
 
 @media (max-width: 650px) {
-	.blurb-hi {
-		font-size: 30px
+	.blurb-normal {
+		font-size: 17px
 	}
-	.blurb-copy {
-		font-size: 25px
+	.blurb-link, .blurb-accent {
+		font-size: 35px
 	}
+
 }
 
 /*main photo*/
