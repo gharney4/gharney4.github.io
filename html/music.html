@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,13 +12,15 @@
 	<title>gh - music</title>
 </head>
 <body>
+
+<!-- NAVBAR -->
 	<div class="navbar">
 		<div>
-			<a href="../index.html"><img id="GH_logo_main" src="../assets/GH_logo.png"></a>
+			<a href="../index.html"><img id="GH_logo_main" src="../assets/GH_logo.png" alt="garrett harney logo"></a>
 		</div>
 		<div class="nav-right">
 			<div class="nav-icon">
-				<img class="hamburger" id="menu-open" src="../assets/hamburger-cyan.png">
+				<img class="hamburger" id="menu-open" src="../assets/hamburger-cyan.png" alt="hamburger">
 			</div>
 			<ul class="nav-items">
 				<li class="nav-item current-page" id="about"><a href="../html/music.html">(my) music</a></li>
@@ -27,8 +29,11 @@
 			</ul>	
 		</div>
 	</div>
-	
+
+<!-- SPACER	 -->
 	<div class="spacer"></div>
+
+<!-- MAIN -->
 	<div class="blurb">
 		<div class="main">
 			<h1 class="blurb-normal">
@@ -40,8 +45,9 @@
 			<h1 class="blurb-normal">
 				the playlist below is a collection of any song i've been a part of, whether as a producer, songwriter, vocalist, or a session drummer.
 			</h1>
+<!-- SPOTIFY EMBED -->
 			<div class="sptofy-embed-container">
-				<iframe src="https://open.spotify.com/embed/playlist/6zhfD8R6m0E4jqAFsS1SnN?view=coverart" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<iframe class="iframe-style" src="https://open.spotify.com/embed/playlist/6zhfD8R6m0E4jqAFsS1SnN?view=coverart" allow="encrypted-media"></iframe>
 			</div>
 			<h1 class="blurb-normal">
 			want to collaborate on a project? <a class="blurb-link" href="solving_problems.html">let's chat about it.</a>
@@ -49,28 +55,33 @@
 		</div>
 	</div>
 
-
-
-
+<!-- POPUP MENU -->
 	<aside id="popup-menu" class="popup-menu-hide">
 			<div class="popup-menu-nav">
-				<a href="../index.html"><img src="../assets/GH_logo.png"></a>
+				<a href="../index.html"><img src="../assets/GH_logo.png" alt="garrett harney logo"></a>
 				<a class ="popup-menu-item" href="music.html">(my) music</a>
 				<a class ="popup-menu-item" href="solving_problems.html">solving problems</a>
 				<a class ="popup-menu-item" href="workplace.html">the workplace</a>
-				<img class="cyan-close" id="menu-close" src="../assets/cyan-close.png">
+				<img class="cyan-close" id="menu-close" src="../assets/cyan-close.png" alt="x button">
 			</div>
 	</aside>
+
+<!-- SPACER -->
 	<div class="spacer"></div>
+
+<!-- FOOTER -->
 	<footer>
-		<ul class="footer-links"></ul>
+		<ul class="footer-links">
 			<li class = "footer-item" id="copyright">
 				&copy; 2021 garrett harney
 			</li>
 			<li class = "footer-item">
-				<a id="footer-contact"href="solving_problems.html">hit me up!</a>
+				<a id="footer-contact" href="solving_problems.html">hit me up!</a>
 			</li>
+		</ul>
 	</footer>
+
+<!-- SCRIPTS -->
 	<script src="../js/nav_script.js"></script>
 </body>
 </html>

@@ -10,7 +10,7 @@ if (button) {
 
 	async function getRonQuote() {
 		console.log("clicked");
-		const url = `http://ron-swanson-quotes.herokuapp.com/v2/quotes`;
+		const url = `https://ron-swanson-quotes.herokuapp.com/v2/quotes`;
 		const response = await fetch(url);
 		const quote = await response.json();
 		ronSection.classList.remove("swanson-response-container-hide");

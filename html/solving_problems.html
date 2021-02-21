@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,13 +12,15 @@
 	<title>gh - solving problems</title>
 </head>
 <body>
+
+<!-- NAVBAR -->
 	<div class="navbar">
 		<div>
-			<a href="../index.html"><img id="GH_logo_main" src="../assets/GH_logo.png"></a>
+			<a href="../index.html"><img id="GH_logo_main" src="../assets/GH_logo.png" alt="garrett harney logo"></a>
 		</div>
 		<div class="nav-right">
 			<div class="nav-icon">
-				<img class="hamburger" id="menu-open" src="../assets/hamburger-cyan.png">
+				<img class="hamburger" id="menu-open" src="../assets/hamburger-cyan.png" alt="hamburger">
 			</div>
 			<ul class="nav-items">
 				<li class="nav-item" id="about"><a href="../html/music.html">(my) music</a></li>
@@ -27,52 +29,61 @@
 			</ul>	
 		</div>
 	</div>
+
+<!-- SPACER -->
 	<div class="spacer"></div>
+
+<!-- MAIN -->
 	<div class="blurb">
 		<div class="main">
 			<h1 class="blurb-normal">
 				i love <span class="blurb-accent">solving problems</span> and i would love to hear about what's going on in your life.  maybe i can help, maybe i can't. hey, it's worth a try!
 			</h1>
 			<h1 class="blurb-normal">
-				to chat about whatever, get some unofficial consulting, or give me advice, hit me up at <span class="blurb-accent">garharney [at] gmail [dot] com.<span>
+				to chat about whatever, get some unofficial consulting, or give me advice, hit me up at <span class="blurb-accent">garharney [at] gmail [dot] com.</span>
 			</h1>
 			<h1 class="blurb-normal">
 				otherwise, hit me up on <a class="blurb-link" target="_blank" href="https://www.linkedin.com/in/garrett-harney-514390162/">linkedin</a> or <a class="blurb-link" target="_blank" href="https://www.instagram.com/garrettharney/">instagram.</a>
 			</h1>
 
-			<!-- 		RON SWANSON CONTAINER -->
+<!-- RON SWANSON QUOTE -->
 			<div class="swanson-container">
 				<h1 class="blurb-normal">sometimes, nobody can solve your problems and you just need to <button type="submit" id="ask-ron">ask ron swanson</button> to give it to you straight.</h1>
 			</div>
 			<div id ="ron-section" class="swanson-response-container-hide">
-				<img id="ron" src="../assets/ron.png">
+				<img id="ron" src="../assets/ron.png" alt="ron face">
 				<p id="ron-quote"></p>
 			</div>
 		</div>
 	</div>
 
-
-
-
+<!-- POPUP MENU -->
 	<aside id="popup-menu" class="popup-menu-hide">
 			<div class="popup-menu-nav">
-				<a href="../index.html"><img src="../assets/GH_logo.png"></a>
+				<a href="../index.html"><img src="../assets/GH_logo.png" alt="garrett harney logo"></a>
 				<a class ="popup-menu-item" href="music.html">(my) music</a>
 				<a class ="popup-menu-item" href="solving_problems.html">solving problems</a>
 				<a class ="popup-menu-item" href="workplace.html">the workplace</a>
-				<img class="cyan-close" id="menu-close" src="../assets/cyan-close.png">
+				<img class="cyan-close" id="menu-close" src="../assets/cyan-close.png" alt="x button">
 			</div>
 	</aside>
+
+<!-- SPACER -->
 	<div class="spacer"></div>
+
+<!-- FOOTER -->
 	<footer>
-		<ul class="footer-links"></ul>
+		<ul class="footer-links">
 			<li class = "footer-item" id="copyright">
 				&copy; 2021 garrett harney
 			</li>
 			<li class = "footer-item">
-				<a id="footer-contact"href="solving_problems.html">hit me up!</a>
+				<a id="footer-contact" href="solving_problems.html">hit me up!</a>
 			</li>
+		</ul>
 	</footer>
+
+<!-- SCRIPTS -->
 	<script src="../js/nav_script.js"></script>
 	<script src="../js/ron_quote.js"></script>
 </body>

@@ -83,6 +83,7 @@ li {
 	}
 }
 
+/*spacer class*/
 .spacer {
 	height: 65px;
 }
@@ -91,7 +92,6 @@ li {
 /*popup menu*/
 .popup-menu-hide{
 	display: none
-
 }
 
 .popup-menu-show {
@@ -100,7 +100,7 @@ li {
 	position: fixed;
 	top: 0;
 	bottom: 0;
-	right: 0
+	right: 0;
 	left: 0;
 	z-index: 20000;
 }
@@ -128,18 +128,9 @@ li {
 	text-align: center;
 }
 
-.popup-menu-item:click {
-	font-family: 'Permanent Marker', cursive;
-	color: white;
-}
-
 #GH_logo_aside {
 	width: 200px;
 }
-
-
-
-
 
 
 /*main area*/
@@ -153,16 +144,15 @@ li {
 	padding: 0 20px;
 }
 
-.blurb-link {
-	font-size: 40px
-}
-
 .blurb-normal {
 	text-align: left;
 	font-size: 20px;
 	font-weight: 300;
 }
 
+.blurb-link {
+	font-size: 40px
+}
 
 .blurb-accent {
 	text-align: left;
@@ -171,11 +161,28 @@ li {
 	font-weight: 300;
 }
 
+@media (max-width: 650px) {
+	.blurb-normal {
+		font-size: 17px
+	}
+	.blurb-link, .blurb-accent {
+		font-size: 35px
+	}
+
+}
+
+/*spotify classes*/
 .spotify-embed-container {
 	display: flex;
 	justify-content: center;
 }
 
+.iframe-style {
+	width: 100%;
+	height: 300px;
+}
+
+/*ron swanson classes*/
 .swanson-container {
 	display: flex;
 	justify-content: flex-start;
@@ -195,7 +202,6 @@ button {
 	cursor: pointer;
 	background-color: black;
 	padding: 3px 8px;
-  	border-style: normal;
   	border-color: cyan;
 }
 
@@ -221,6 +227,7 @@ button {
 	color: white;
 }
 
+/*footer classes*/
 footer {
 	display: flex;
 	position: fixed;
@@ -232,21 +239,14 @@ footer {
 	background-color: #232324;
 }
 
-.footer-item {
+.footer-links {
 	font-weight: 300;
 	font-size: 14px;
+	display: flex;
 }
 
 
-@media (max-width: 650px) {
-	.blurb-normal {
-		font-size: 17px
-	}
-	.blurb-link, .blurb-accent {
-		font-size: 35px
-	}
 
-}
 
 /*main photo*/
 #GH_main {
