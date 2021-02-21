@@ -74,7 +74,7 @@ li {
 	cursor: pointer;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1200px) {
 	.nav-items, #copyright {
 		display: none;
 	}
@@ -161,7 +161,7 @@ li {
 	font-weight: 300;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1200px) {
 	.blurb-normal {
 		font-size: 17px
 	}
